@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="contact/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        
+        <title>Central Perk</title>
+        
+        
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 logo">
+                        <a href="index.html"><b>CENTRAL PERK</b></a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-6 links">
+                        <div class="row">
+                            <a class="col-12 col-sm-3" href="index.html">
+                                <span><b>HOME</b></span>
+                            </a>
+                            <a class="col-12 col-sm-3" href="menu.html">
+                                <span><b>MENU</b></span>
+                            </a>
+                            <a class="col-12 col-sm-3" href="about.html">
+                                <span><b>ABOUT</b></span>
+                            </a>
+                            <a class="col-12 col-sm-3" href="contact.html">
+                                <div class="homemenu"><b>CONTACT</b></div>
+                            </a>
+                        </div> 
+                    </div>
+                    
+                    <div class="col-12 pagetitle">CONTACT</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 contact">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 info">
+                            <div class="row">
+                                <div class="col-12 contitle">HOW TO FIND US</div>
+                                <div class="col-12 coninfo">
+                                    <i class="fas fa-map-marker"></i> 199 Lafayette Street, Manhattan, New York<br/> 
+                                    <i class="fas fa-envelope"></i>  contact@centralperk.com <br/>
+                                    <i class="fas fa-phone"></i> 917-512-6179<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 map">
+                            <div id="map" style="width:100%;height:150px;"> </div>
+                            <script>
+                                function initMap() {
+                                    var jos = {lat: 40.721281, lng: -73.997748};
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 15,
+                                        center: Central Perk
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: Central Perk,
+                                        map: map
+                                    });
+                                }
+                            </script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhbl_hDR1Cx2s2fF-FXb4JE7_PhNI9xqU&callback=initMap">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 footerlogo">
+                        <img src="central-perk-logo.png">
+                    </div>
+                    <div class="col-12 contactinfo">
+                        <p>199 Lafayette Street, Manhattan, New York</p>
+                        <p>CALL 917-512-6179</p>
+                        <p>contact@centralperk.com</p>
+                    </div>
+                    <div class="col-12 media">
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
